@@ -4,8 +4,12 @@
              xmlns:local="clr-namespace:AppActivosFijos"
              x:Class="AppActivosFijos.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout Spacing="10">
+        <Button Text="Iniciar"
+                x:Name="btnScan"
+                Clicked="btnScan_Clicked"/>
+        <Entry x:Name="txtBarCode"
+               Placeholder="Texto del Scan"/>
+    </StackLayout>
 
 </ContentPage>
